@@ -12,6 +12,7 @@ import { HomeComponent } from './main/home/home.component';
 import { MoviesComponent } from './main/movies/movies.component';
 import { MylistComponent } from './main/mylist/mylist.component';
 import { FooterComponent } from './footer/footer.component';
+import { TileComponent } from './main/components/tile/tile.component';
 @NgModule({
   declarations: [
     AppComponent,
@@ -20,7 +21,8 @@ import { FooterComponent } from './footer/footer.component';
     HomeComponent,
     MoviesComponent,
     MylistComponent,
-    FooterComponent
+    FooterComponent,
+    TileComponent
   ],
   imports: [
     BrowserModule,

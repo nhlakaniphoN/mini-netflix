@@ -1,1 +1,14 @@
-<p>movies works!</p>
+<main class="bg-main">
+
+<div class="space"><h1 class="title">Movies</h1></div>
+<span></span>
+
+<div class="row" *ngFor="let movie of movies">
+
+      <app-tile [movie]="movie">
+
+
+      </app-tile>
+  </div>
+           
+</main>
