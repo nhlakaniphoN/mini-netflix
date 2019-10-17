@@ -11,6 +11,7 @@ import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { HomeComponent } from './main/home/home.component';
 import { MoviesComponent } from './main/movies/movies.component';
 import { MylistComponent } from './main/mylist/mylist.component';
+import { FooterComponent } from './footer/footer.component';
 @NgModule({
   declarations: [
     AppComponent,
@@ -18,7 +19,8 @@ import { MylistComponent } from './main/mylist/mylist.component';
     
     HomeComponent,
     MoviesComponent,
-    MylistComponent
+    MylistComponent,
+    FooterComponent
   ],
   imports: [
     BrowserModule,
@@ -28,6 +30,7 @@ import { MylistComponent } from './main/mylist/mylist.component';
     MatMenuModule,
     BrowserAnimationsModule
   ],
+  exports:[NavComponent],
   providers: [],
   bootstrap: [AppComponent]
 })
