@@ -1,4 +1,6 @@
 import { Component, OnInit, Input } from '@angular/core';
+import { MoviesService } from 'src/app/api/movies/movies.service';
+import { Imovie } from 'src/app/api/movies/movie';
 
 @Component({
   selector: 'app-tile',
@@ -7,10 +9,14 @@ import { Component, OnInit, Input } from '@angular/core';
 })
 export class TileComponent implements OnInit {
 
-  constructor() { }
-
+ 
+  constructor(private moviesService:MoviesService) { }
+  
   ngOnInit() {
-  }
-  @Input() movie;
+   
+ 
+   }
+ 
+ @Input() movie:Imovie;
 
 }

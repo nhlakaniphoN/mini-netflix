@@ -1,2 +1,9 @@
+body{
+    margin:0;
+}
+html,body{
+    height:100%;
+}
 $materialize-fonts-path: '~materialize-angular/fonts';
 @import '~materialize-angular/styles/materialize-angular.scss';
+@import '~materialize-css/dist/css/materialize.min.css';

@@ -2,13 +2,8 @@
 
 <div class="space"><h1 class="title">Movies</h1></div>
 <span></span>
-
-<div class="row" *ngFor="let movie of movies">
-
-      <app-tile [movie]="movie">
-
-
-      </app-tile>
-  </div>
+<div class="row" >
+  <app-tile *ngFor="let movie of movies" [movie]="movie" > </app-tile>
+</div>
            
 </main>
