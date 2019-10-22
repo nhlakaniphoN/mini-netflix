@@ -1,6 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 import { MoviesService } from 'src/app/api/movies/movies.service';
 import { Imovie } from 'src/app/api/movies/movie';
+import { map } from 'rxjs/operators';
 
 @Component({
   selector: 'app-movies',
@@ -12,7 +13,7 @@ export class MoviesComponent implements OnInit {
   constructor(private moviesService:MoviesService) { }
 
   ngOnInit() {
-   this.moviesService.getMovies().subscribe(movies=>this.movies=movies);
+   this.moviesService.getMovies().pipe(map(({data})=>data.movies)).subscribe(movies=>this.movies=movies);
 
   }
 

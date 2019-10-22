@@ -1,9 +1,20 @@
+type genres={
+    id:string;
+    name:string;
+}
+type details={
+     title:string;
+     revenue: string;
+     genres:genres[];
+     description?:string;
+
+
+}
 export interface Imovie{
 
-    url:string;
-    name:string;
-    image:string;
+    id:string;
+    title:string;
+    image_url:string;
     year:string;
-    genre:string;
-    production:string;
+    details:details;
 }
